@@ -1,1 +1,3 @@
-exec 'source ./.vimrc'
+if filereadable("./.vimrc")
+  exec 'source ./.vimrc'
+endif

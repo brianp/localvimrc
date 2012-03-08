@@ -1,0 +1,12 @@
+= LocalVimrc
+
+Just sources the .vimrc file from whatever directory you open vim in. Used for
+project specific vim options.
+
+ex. One Projects convention is to use hard tabs instead of soft tabs. Create a .vimrc file in the project directory and set the hard tab options.
+
+Always open vim from the project route
+
+* Create .vimrc in project route: ex. /project/.vimrc
+* Always open vim from the project route: ex. mvim /project
+* Profit.

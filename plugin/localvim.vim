@@ -1,5 +1,10 @@
 let s:path = expand('%')
 
+" Use cwd instead if vim was not started editing a file or dir
+if len(s:path) == 0
+  let s:path = getcwd()
+end
+
 " I never open a dir with a trailing slash but some people might
 if s:path[-1:] == '/'
   let s:vimrc = '.vimrc'
